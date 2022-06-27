@@ -1,5 +1,3 @@
-package com.example;
-
 import java.sql.Connection;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
@@ -12,7 +10,7 @@ public class CRUDUtils {
     private static String INSERT_STUDENT = "INSERT INTO students(name, surname, course_name) VALUES (?, ?, ?);";
     private static String UPDATE_STUDENT = "UPDATE students SET course_name = ? WHERE id = ?";
     private static String DELETE_STUDENT = "DELETE FROM students WHERE id = ?";
-    
+
     public static List<Student> getStudentData(String query) {
         List<Student> students = new ArrayList<>();
 
